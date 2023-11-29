@@ -4,7 +4,7 @@ create table if not exists sm_role_user (
     value varchar(50) not null unique
 );
 
-insert into sm_role_user (name, value) values ('User', 'ROLE_USER');
+insert into sm_role_user (name, value) values ('User', 'ROLE_VIEWER');
 insert into sm_role_user (name, value) values ('Administrator', 'ROLE_ADMIN');
 
 create table if not exists sm_user (
