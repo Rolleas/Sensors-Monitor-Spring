@@ -32,7 +32,6 @@ public class SensorService {
     private final UnitRepository unitRepository;
     private final ModelMapper modelMapper;
 
-    @Cacheable("sensorCache")
     public ResponseEntity<?> getByPage(FilterDto filterDto) {
         Page<Sensor> page = sensorRepository.findAll(
                 SensorSpecifications.search(filterDto.getKeyword()),
